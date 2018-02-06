@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff6f6"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#655aff"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/settings"/>
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="时光胶囊"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/add"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="34dp">
+        <Button
+            android:id="@+id/todayTab"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="1dp"
+            android:background="@drawable/tab_bg_checked"
+            android:text="Today"/>
+        <Button
+            android:id="@+id/futureTab"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_normal"
+            android:text="Future"/>
+        <Button
+            android:id="@+id/calendarTab"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_normal"
+            android:text="Calendar"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

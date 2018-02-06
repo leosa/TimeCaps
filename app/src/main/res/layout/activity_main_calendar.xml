@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <com.produce.leosa.customcomp.LeoCalendar
+        android:id="@+id/MyCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_height="40dp"
+        app:title_color="#ffffff"
+        app:title_text_size="20dp"
+        app:title_text_color="#585757" />
+</LinearLayout>

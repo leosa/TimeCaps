@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">时光胶囊</string>
+    <string name="title_activity_cap_calendar">CapCalendarActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+</resources>
